@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WestausCom", "WestausTest\WestausCom.csproj", "{9782D4DB-7757-4105-B99B-FC583FD222D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Westaus.Service", "Westaus.Service\Westaus.Service.csproj", "{B31FFF89-A643-4350-965A-F02A2FA29B13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9782D4DB-7757-4105-B99B-FC583FD222D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9782D4DB-7757-4105-B99B-FC583FD222D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9782D4DB-7757-4105-B99B-FC583FD222D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9782D4DB-7757-4105-B99B-FC583FD222D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31FFF89-A643-4350-965A-F02A2FA29B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31FFF89-A643-4350-965A-F02A2FA29B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31FFF89-A643-4350-965A-F02A2FA29B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31FFF89-A643-4350-965A-F02A2FA29B13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D37E80A4-7124-43C6-8B2C-2CD8AA71D451}
+	EndGlobalSection
+EndGlobal
