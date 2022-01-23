@@ -1,5 +1,6 @@
 ﻿using Aspose.Cells;
 using Aspose.Cells.Utility;
+using IronXL;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -9,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Westaus.Service
 {
-    public class JsonConverter
+    public class FileConverter
     {
-        public void CreateExcel() 
+        public void JsonToExcel() 
         {
             // Create a Workbook object
             Workbook workbook = new Workbook();
@@ -32,6 +33,15 @@ namespace Westaus.Service
 
             // Save Excel file
             workbook.Save(filePath + "products.xlsx");
+        }
+
+        public void ExcelToJson() 
+        {
+
+            //Path to load workbook from
+            string filePath = @"C:\Users\ndudi\Documents\ShopifyProducts\";
+            WorkBook workbook = WorkBook.Load(filePath + "products.xlsx");
+            workbook.SaveAsJson(filePath + "productexport.json");
         }
     }
 }

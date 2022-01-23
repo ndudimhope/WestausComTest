@@ -4,7 +4,7 @@ using ShopifySharp.Lists;
 
 namespace Westaus.Service
 {
-    public class ImportProducts
+    public class ProductsService
     {
         public async Task GetAllProducts(string shopUrl, string shopToken)
         {
@@ -26,6 +26,11 @@ namespace Westaus.Service
         }
 
 
+        //public async Task InsertProduct(string shopUrl, string shopToken) 
+        //{
+            
+           
+        //}
         
 
 

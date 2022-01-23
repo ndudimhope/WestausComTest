@@ -6,12 +6,14 @@ namespace Westaus
     {
         static void Main(string[] args)
         {
-            ImportProducts importProducts = new ImportProducts();
+            //create instance of product service class
+            ProductsService service = new ProductsService();
 
-            JsonConverter converter = new JsonConverter();
-            importProducts.GetAllProducts("ndudimuzordinma.myshopify.com/admin/api/2022-01/products.json", "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").GetAwaiter().GetResult();
+            //create instance of file converter class
+            FileConverter converter = new FileConverter();
+            service.GetAllProducts("ndudimuzordinma.myshopify.com/admin/api/2022-01/products.json", "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").GetAwaiter().GetResult();
 
-            converter.CreateExcel();
+            converter.JsonToExcel();
         }
     }
 }
